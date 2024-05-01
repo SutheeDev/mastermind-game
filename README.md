@@ -34,12 +34,16 @@ Once the game is loaded, follow these steps to play. <br><br>
 5. Depending on the difficulty level, a specific range of numbers is allowed. If you input a number that is out of range, a warning message will be displayed. For example, the easy level only allows you to input numbers that range from 0 to 3 in each digit. So, if you input 1234 as your combination, you'll get the warning message since the number 4 is not allowed.
 6. After each guess, the computer will provide feedback on how your combination compares to the hidden number. <br>
 
-Example of the feedback:
+- Example of the feedback:
 
-- '2 correct number and 0 correct location' means your combination has two correct numbers, but nothing is in the correct location.
-- '2correct number and 1 correct location' means one number in your guess is in the accurate position and another correct number is in the wrong position.
-- '0 correct number and 0 correct location' means the hidden number does not include any numbers in your guess.
-- '4 correct number and 4 correct location' means you get all numbers correctly; you win the game! <br>
+  - 2 correct number and 0 correct location
+    - This means your combination has two correct numbers, but nothing is in the correct location.
+  - 2correct number and 1 correct location
+    - This means one number in your guess is in the accurate position and another correct number is in the wrong position.
+  - 0 correct number and 0 correct location
+    - This means the hidden number does not include any numbers in your guess.
+  - 4 correct number and 4 correct location
+    - This means you get all numbers correctly; you win the game! <br>
 
 7. Use the feedback to refine your next guess.
 8. You have a total of 10 attempts to guess the number. If you run out of attempts, you lose the game. If you guess the correct combination, you win!
@@ -55,27 +59,27 @@ The Mastermind Game is implemented using Vanilla JavaScript. Here's an overview 
 
 ### Getting Random Numbers:
 
-- Figured out how to fetch random numbers from random.org. Implemented a robust function to fetch and transform the response into a usable array of number combinations.
+- Figured out how to [fetch random numbers](https://github.com/SutheeDev/mastermind-game/blob/fde5ac28cebfd8cbd081300ea87aba5635245f37/index.js#L68-L82) from random.org. Implemented a robust function to fetch and [transform](https://github.com/SutheeDev/mastermind-game/blob/fde5ac28cebfd8cbd081300ea87aba5635245f37/index.js#L85-L92) the response into a usable array of number combinations.
 
 ### User input Validation:
 
-- Implemented a validation protocol by checking for out-of-range numbers, non-numeric characters, and validated the length of the input.
+- Implemented a [validation protocol](https://github.com/SutheeDev/mastermind-game/blob/fde5ac28cebfd8cbd081300ea87aba5635245f37/index.js#L161-L181) by checking for out-of-range numbers, non-numeric characters, and validated the length of the input.
 
 ### Comparing Guesses:
 
-- Developed a main function to compare the user's guess with the hidden combination, generating feedback on correct numbers and correct locations.
+- Developed a main [function](https://github.com/SutheeDev/mastermind-game/blob/fde5ac28cebfd8cbd081300ea87aba5635245f37/index.js#L94-L118) to compare the user's guess with the hidden combination, generating feedback on correct numbers and correct locations.
 
 ### Seamless Input Handling:
 
-- Enhanced user experience by implementing a function to automatically reset input values after each guess, simplifying the gameplay flow.
+- Enhanced user experience by implementing a [function](https://github.com/SutheeDev/mastermind-game/blob/fde5ac28cebfd8cbd081300ea87aba5635245f37/index.js#L46-L49) to automatically reset input values after each guess, simplifying the gameplay flow.
 
 ### Feedback Display:
 
-- Provided a feedback display to the user based on comparison results, showing the user how many numbers are right and how many are in the right place.
+- Provided a [feedback display](https://github.com/SutheeDev/mastermind-game/blob/fde5ac28cebfd8cbd081300ea87aba5635245f37/index.js#L199-L211) to the user based on comparison results, showing the user how many numbers are right and how many are in the right place.
 
 ### Result Declaration:
 
-- Established a function to declare game outcomes, ensuring users are promptly informed of their success or failure with hidden combination revelation. <br><br>
+- Established a function to [declare game outcomes](https://github.com/SutheeDev/mastermind-game/blob/fde5ac28cebfd8cbd081300ea87aba5635245f37/index.js#L120-L146), ensuring users are promptly informed of their success or failure with hidden combination revelation. <br><br>
 
 ## Extension: <a name="extension"></a>
 
@@ -88,15 +92,15 @@ To make the game more engaging, difficulty levels were implemented. Users can ch
 
 ### Dynamic Difficulty Adjustment:
 
-- Engineered a flexible system to dynamically adjust difficulty levels upon user interaction, ensuring seamless integration and alignment of difficulty level mechanics with front-end design.
+- Engineered a flexible system to dynamically [adjust difficulty](https://github.com/SutheeDev/mastermind-game/blob/fde5ac28cebfd8cbd081300ea87aba5635245f37/index.js#L16-L26) levels upon user interaction, ensuring seamless integration and alignment of difficulty level mechanics with front-end design.
 
 ### Dynamic Reset of Hidden Combination:
 
-- Implemented a machanism to reset the hidden combination when users switch difficulty levels, maintaining gameplay integrity and challenge relevance.
+- [Reset](https://github.com/SutheeDev/mastermind-game/blob/fde5ac28cebfd8cbd081300ea87aba5635245f37/index.js#L24) the hidden combination when users switch difficulty levels, maintaining gameplay integrity and challenge relevance.
 
 ### Visual Clarity for Difficulty Selection:
 
-- Incorporated visual indicators to highlight the selected difficulty level, improving user engagement and navigation. <br><br>
+- Incorporated visual indicators to [highlight](https://github.com/SutheeDev/mastermind-game/blob/fde5ac28cebfd8cbd081300ea87aba5635245f37/index.js#L28-L36) the selected difficulty level, improving user engagement and navigation. <br><br>
 
 ## Feedback <a name="feedback"></a>
 
