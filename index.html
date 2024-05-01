@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Number Guessing Game</title>
+  </head>
+  <body>
+    <main>
+      <h1>Mastermind Game</h1>
+      <div class="level-container">
+        <button class="level-btn easy">Easy</button>
+        <button class="level-btn medium clicked">Medium</button>
+        <button class="level-btn difficult">Difficult</button>
+      </div>
+      <div id="rules">
+        <h3>Rules</h3>
+        <p>> Guess the 4 number combinations to win the game</p>
+        <p>> You have a total of 10 attempts</p>
+        <p class="rangeRule">
+          > Choose 8 different numbers (0 - 7) for each digit
+        </p>
+        <p>> Duplicate numbers are allowed</p>
+        <p>> Use the feedback to improve your guess!</p>
+      </div>
+      <div class="outcome-msg"></div>
+      <h3 id="attempts"></h3>
+      <div class="input-container">
+        <input type="number" id="guess" />
+        <button type="submit" id="btn">Guess</button>
+      </div>
+      <p id="warning"></p>
+      <div class="history-container"></div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
