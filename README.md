@@ -29,10 +29,18 @@ Once the game is loaded, follow these steps to play. <br><br>
 
 1. Read all the rules that are displayed on the screen.
 2. Choose the game's difficulty level by clicking on the easy, medium, or difficult buttons. The game's difficulty is set to medium by default.
+
+![Three Difficulty Level Buttons: Easy Medium Difficult](https://res.cloudinary.com/dnc7potxo/image/upload/v1714607229/ReadMe-Images/Mastermind%20Game/levelBtns_tfvyo7.png) <br><br>
+
 3. To play the game, input a combination of 4 numbers into the input form and hit the GUESS button or press Enter.
 4. The input form only accepts a combination of 4 numbers. The warning message will be displayed if you input something other than numbers or input less or more than 4 numbers.
+
+![Red Warning Statement Appeared Under GUESS Button](https://res.cloudinary.com/dnc7potxo/image/upload/v1714607230/ReadMe-Images/Mastermind%20Game/Warning_qgywfo.png) <br><br>
+
 5. Depending on the difficulty level, a specific range of numbers is allowed. If you input a number that is out of range, a warning message will be displayed. For example, the easy level only allows you to input numbers that range from 0 to 3 in each digit. So, if you input 1234 as your combination, you'll get the warning message since the number 4 is not allowed.
 6. After each guess, the computer will provide feedback on how your combination compares to the hidden number. <br>
+
+![Display of the User's Guesses and Feedback](https://res.cloudinary.com/dnc7potxo/image/upload/v1714607229/ReadMe-Images/Mastermind%20Game/Feedback_fligwa.png) <br><br>
 
 - Example of the feedback:
 
